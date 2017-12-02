@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prova_POO
+namespace Prova_POO.Questao_1
 {
-    class Program
+    public interface Emprestimo
     {
-        static void Main(string[] args)
-        {
-        }
+        void efetivarEmprestimo(Usuario _usuario);
     }
 }

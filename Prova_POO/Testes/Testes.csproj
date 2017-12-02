@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{237CFF8E-9BC8-4839-ACDB-7E7DB52B3B73}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Prova_POO</RootNamespace>
-    <AssemblyName>Prova_POO</AssemblyName>
+    <ProjectGuid>{96DEDD65-E3DA-4185-B6B9-9040975F8EC8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Testes</RootNamespace>
+    <AssemblyName>Testes</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,14 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Questao 1\Aluno.cs" />
-    <Compile Include="Questao 1\Bibliotecario.cs" />
-    <Compile Include="Questao 1\Emprestimo.cs" />
-    <Compile Include="Questao 1\Professor.cs" />
-    <Compile Include="Questao 1\Usuario.cs" />
-    <Compile Include="Questao 2\Livro.cs" />
+    <Compile Include="Questao2.cs" />
+    <Compile Include="Questao1.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prova_POO\Prova_POO.csproj">
+      <Project>{237CFF8E-9BC8-4839-ACDB-7E7DB52B3B73}</Project>
+      <Name>Prova_POO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
