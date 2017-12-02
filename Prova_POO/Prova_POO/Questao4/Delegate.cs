@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prova_POO.Questao_1
+namespace Prova_POO.Questao4
 {
-    public interface Emprestimo
+    class Delegate
     {
-        void efetivarEmprestimo(Usuario _usuario);
     }
 }

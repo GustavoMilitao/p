@@ -43,10 +43,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Questao 1\Aluno.cs" />
     <Compile Include="Questao 1\Bibliotecario.cs" />
-    <Compile Include="Questao 1\Emprestimo.cs" />
+    <Compile Include="Questao 1\IEmprestimo.cs" />
+    <Compile Include="Questao 1\MatriculaForaException.cs" />
     <Compile Include="Questao 1\Professor.cs" />
     <Compile Include="Questao 1\Usuario.cs" />
     <Compile Include="Questao 2\Livro.cs" />
+    <Compile Include="Questao4\Delegate.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

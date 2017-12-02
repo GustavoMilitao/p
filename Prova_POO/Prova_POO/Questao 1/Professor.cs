@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Prova_POO.Questao_1
 {
-    public class Professor : Usuario , Emprestimo
+    public class Professor : Usuario
     {
         public List<Livro> LivrosEmprestados { get; set; }
 
@@ -29,28 +29,6 @@ namespace Prova_POO.Questao_1
         public int limiteDias()
         {
             return 15;
-        }
-
-        public void efetivarEmprestimo(Usuario _usuario)
-        {
-            if ((_usuario.Matricula) >= 201 && (_usuario.Matricula <= 300))
-            {
-                Professor professor = (Professor)_usuario;
-                foreach(Livro livro in professor.LivrosEmprestados)
-                {
-                    Console.WriteLine("livro: " + livro.Nome+ " Autor:" + livro.Autor + "Ano:" + livro.AnoPublicacao);
-                    Console.WriteLine("Devolução daqui à: " + professor.limiteDias() + " Dias");
-                }
-            }
-            else if ((_usuario.Matricula) >= 301 && (_usuario.Matricula <= 999))
-            {
-                Aluno aluno = (Aluno)_usuario;
-                foreach (Livro livro in aluno.LivrosEmprestados)
-                {
-                    Console.WriteLine("livro: " + livro.Nome + " Autor:" + livro.Autor + "Ano:" + livro.AnoPublicacao);
-                    Console.WriteLine("Devolução daqui à: " + aluno.limiteDias() + " Dias");
-                }
-            }
         }
     }
 }

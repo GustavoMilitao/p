@@ -11,6 +11,7 @@ namespace Testes
     {
         public static void rodar()
         {
+            Console.WriteLine("---------- Questão 1 ----------");
             Usuario professor = new Professor();
             Usuario aluno = new Aluno();
             Console.WriteLine("Eu sou um Aluno - " + ((Aluno)aluno).mostrarPapel());
